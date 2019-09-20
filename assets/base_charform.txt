@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="../assets/logo.png">
+        <title>Role + main menu</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/charforms.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Blob"></script>
+    </head>
+        <body>
+            <div class="global">
+                <header>
+                    <div class="text">
+                        <h1 id="title">Role +</h1>
+                        <h2 id="desc">Tool for role playing.</h2>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="../index.html"><i class="material-icons">
+                                home
+                            </i> Accueil</a></li>
+                            <li><a href="indexcharforms.html"><i class="material-icons">
+                                person
+                            </i> Fiches personnages</a></li>
+                            <li><a href="#"><i class="material-icons">
+                                build
+                            </i> Outils</a></li>
+                            <li><a href="#"><i class="material-icons">
+                                info
+                            </i> A propos</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <main>
+
+                </main>
+                
+</div>
+<script src="../js/numberboxchange.js"></script>
+<script src="../js/commoncharformsfunctions.js"></script>
+<script src="../js/upload.js"></script>
+<!-- ici script de la fiche perso -->
+<script src="../assets/clipboard.min.js"></script>
+<script src="../bower_components/file-saver/dist/FileSaver.min.js"></script>
+<script src="../assets/yama_functions.js"></script>
+<script src="../js/save.js"></script>
+<script src="../assets/jquery-3.4.1.min.js"></script>
+</body>
+</html>

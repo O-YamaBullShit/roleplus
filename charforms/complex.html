@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="../assets/logo.png">
+        <title>Role + Fiche perso complete</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/charforms.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Blob"></script>
+    </head>
+        <body>
+            <div class="global">
+                <header>
+                    <div class="text">
+                        <h1 id="title">Role +</h1>
+                        <h2 id="desc">Tool for role playing.</h2>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="../index.html"><i class="material-icons">
+                                home
+                            </i> Accueil</a></li>
+                            <li><a href="indexcharforms.html"><i class="material-icons">
+                                person
+                            </i> Fiches personnages</a></li>
+                            <li><a href="#"><i class="material-icons">
+                                build
+                            </i> Outils</a></li>
+                            <li><a href="#"><i class="material-icons">
+                                info
+                            </i> A propos</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <main>
+                    <input type="text" id="gender" class="textBox" placeholder="Sexe" /> <br> <br>
+                    <input type="text" id="name" class="textBox" placeholder="Nom" /> <br> <br>
+                    <input type="text" id="firstname" class="textBox" placeholder="Prénom" /> <br> <br>
+                    <input type="text" id="race" class="textBox" placeholder="Race" /> <br> <br>
+                    <div class="numberBox">
+                        <button id="minus">-</button>
+                        <input type="text" id="numberBox" placeholder="Age">
+                        <button id="plus">+</button>
+                    </div> <br>
+                    <input type="text" id="hobbies" class="textBox" placeholder="Hobbie(s)" /> <br> <br>
+                    <input type="text" id="job" class="textBox" placeholder="Métier" /> <br> <br>
+                    <input type="text" id="power" class="textBox" placeholder="Pouvoir/spécialisation" /> <br> <br>
+                    <input type="text" id="addinfo" class="textBox" placeholder="Annecdote sur le perso" /> <br> <br>
+                    <input type="text" id="tastes" class="textBox" placeholder="Goûts" /> <br> <br>
+                    <textarea class="textAreaBox" id="strenghts" placeholder="Forces"></textarea> <br> <br>
+                    <textarea class="textAreaBox" id="weaknesses" placeholder="Faiblesses (doivent être égales aux forces)"></textarea> <br> <br>
+                    <textarea class="textAreaBox" id="story" placeholder="Histoire"></textarea> <br> <br>
+                    <div class="changeImg">
+                        <button class="charFormButton" id="onlineImg">L'image est en ligne ?</button> <br> <br>
+                        <button class="charFormButton" onclick="$('#img').attr('src', '../assets/fill.png')">Je ne veux plus d'image au final</button> <br> <br>
+                        <input type="file" onchange="readURL(this)" id="monimage" class="inputFile"> <br> <br>
+                    </div>
+                    <button id="save-button" class="charFormButton">Sauvegarder.</button> <br>
+                    <div class="imgForm" align="right">
+                        <img src="../assets/fill.png" alt="Apparence" id="img" height="300" width="300"/> <br> <br>
+                        <button id="uploadButton" onclick="uploadToImgur.call(image)" class="charFormButton">Uploader l'image sur Imgur</button>
+                    </div>
+                    <div id="output"></div>
+
+                </main>
+                
+</div>
+<script src="../js/numberboxchange.js"></script>
+<script src="../js/commoncharformsfunctions.js"></script>
+<script src="../js/complex.js"></script>
+<script src="../js/upload.js"></script>
+<script src="../bower_components/file-saver/dist/FileSaver.min.js"></script>
+<script src="../js/save.js"></script>
+<script src="../assets/jquery-3.4.1.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "uniq-id",
+  "description": "Generate unique id",
+  "license": "MIT",
+  "keywords": [
+    "uniq id",
+    "unique id"
+  ],
+  "main": "dist/js/uniq-id.min.js",
+  "ignore": [
+    "node_modules"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/all-bear/js.uniq-id.git",
+  "version": "0.1.0"
+}

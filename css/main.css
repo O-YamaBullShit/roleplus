@@ -1,0 +1,116 @@
+* {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: hsl(236, 32%, 26%);
+    left: 0; right: 0; top: 0;
+    position: absolute;
+    color: #fff;
+    height: 105px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: block;
+}
+
+header .text h1 {
+    padding: 5px;
+    display: inline;
+}
+
+header .text h2 {
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+header .nav li{
+    color: #fff;
+    list-style: none;
+    display: inline;
+    padding: 15px;
+    right: 0;
+    font-size: large;
+}
+
+header .nav a:visited{
+    color: #fff;
+}
+
+header .nav a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+header .nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #3cefff;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+header .nav a:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+main {
+    position: absolute;
+    top: 110px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.shinyButton {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+.shinyButton::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.shinyButton:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+.shinyButton:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.warn{
+    border: red solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ff7675;
+}

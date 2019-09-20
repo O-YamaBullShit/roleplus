@@ -1,0 +1,19 @@
+{
+  "name": "uniq-id",
+  "version": "0.1.0",
+  "description": "Generate unique id",
+  "main": "./dist/js/uniq-id.min.js",
+  "author": {
+    "name": "Oleh Biriukov"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/all-bear/js.uniq-id.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-babel-minify": "^0.1.12"
+  }
+}
