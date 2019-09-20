@@ -15,46 +15,26 @@
                 <h2 id="desc">Tool for role playing.</h2>
             </div>
             <div class="nav">
-                <ul>
-                    <li><a href="#"><i class="material-icons">
-                        home
-                    </i> Accueil</a></li>
-                    <li><a href="#"><i class="material-icons">
-                        person
-                    </i> Fiches personnages</a></li>
-                    <li><a href="#"><i class="material-icons">
-                        build
-                    </i> Outils</a></li>
-                    <li><a href="#"><i class="material-icons">
-                        info
-                    </i> A propos</a></li>
-                </ul>
-            </div>
+                    <ul>
+                        <li><a href="index.html"><i class="material-icons">
+                            home
+                        </i> Accueil</a></li>
+                        <li><a href="charforms/indexcharforms.html"><i class="material-icons">
+                            person
+                        </i> Fiches personnages</a></li>
+                        <li><a href="tools.html"><i class="material-icons">
+                            build
+                        </i> Outils</a></li>
+                        <li><a href="about.html"><i class="material-icons">
+                            info
+                        </i> A propos</a></li>
+                    </ul>
+                </div>
         </header>
         <main>
             <div class="article">
                 <p>bonjour</p>
             </div>
         </main>
-        <footer>
-            <nav class="navFooter">
-                <ul>
-                    <li><a href="#"><i class="material-icons">
-                        home
-                    </i> Accueil</a></li>
-                    <li><a href="#"><i class="material-icons">
-                        person
-                    </i> Fiches personnages</a></li>
-                    <li><a href="#"><i class="material-icons">
-                        build
-                    </i> Outils</a></li>
-                    <li><a href="#"><i class="material-icons">
-                        info
-                    </i> A propos</a></li>
-                </ul>
-            </nav>
-            <br>
-            <p id="madelove">Made with <span style="color: #e25555;">&hearts;</span> by O-Yama</p>
-        </footer>
     </body>
 </html>

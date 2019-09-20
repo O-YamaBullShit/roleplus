@@ -25,10 +25,10 @@
                             <li><a href="indexcharforms.html"><i class="material-icons">
                                 person
                             </i> Fiches personnages</a></li>
-                            <li><a href="#"><i class="material-icons">
+                            <li><a href="../tools.html"><i class="material-icons">
                                 build
                             </i> Outils</a></li>
-                            <li><a href="#"><i class="material-icons">
+                            <li><a href="../about.html"><i class="material-icons">
                                 info
                             </i> A propos</a></li>
                         </ul>
