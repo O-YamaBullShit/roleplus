@@ -44,6 +44,15 @@ function out(){
         image = "Image locale";
     }
 
+    var screenSize = screen.width;
+    if(screenSize <= 700){
+        var div = document.querySelector(".imgForm");
+        div.style.right = "10px";
+    } else {
+        var div = document.querySelector(".imgForm");
+        div.style.right = "-145%";
+    }
+
     // output
     var out = document.getElementById("output");
     out.innerHTML = `

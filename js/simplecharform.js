@@ -33,8 +33,14 @@ function createOut(){
         image = "Image locale.";
     }
 
-    var div = document.querySelector(".imgForm");
-    div.style.right = "-150%";
+    var screenSize = screen.width;
+    if(screenSize <= 700){
+        var div = document.querySelector(".imgForm");
+        div.style.right = "10px";
+    } else {
+        var div = document.querySelector(".imgForm");
+        div.style.right = "-145%";
+    }
 
     var out = document.getElementById("output");
     out.innerHTML = `

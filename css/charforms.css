@@ -1,128 +1,268 @@
-.textBox{
-    padding: 5px;
-    width: 160px;
-    height: 30px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.2s ease-in-out;
-    border: solid 2px #000;
+/* AFFICHAGE PC */
+@media screen
+and (min-device-width: 700px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .textBox{
+        padding: 5px;
+        width: 160px;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.2s ease-in-out;
+        border: solid 2px #000;
+    }
+
+    .textBox:focus{
+        border: 2px solid #2d3058;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .numberBox{
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 2px black;
+        width: 160px;
+        height: 30px;
+    }
+
+    .numberBox > #numberBox {
+        width: 80px;
+        left:0;
+    }
+
+    .numberBox > #minus, #plus {
+        width: 30px;
+        height: 22px;
+        background-color: #2d3058;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        transition: all linear 0.2s;
+    }
+
+    .numberBox > #minus:hover {
+        width: 30px;
+        height: 22px;
+        background-color: #2d3058;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .numberBox > #plus:hover {
+        width: 30px;
+        height: 22px;
+        background-color: #2d3058;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    #numberBox {
+        border-radius: 10px;
+        border-color: #2d30581;
+    }
+
+    .textAreaBox{
+        border-radius: 10px;
+        border: solid 2px #000;
+        transition: all linear 0.2s;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        max-width: 160px;
+        min-width: 160px;
+        width: 160px;
+        height: 60px;
+        padding: 5px;
+    }
+
+    .textAreaBox:focus{
+        border: solid 2px #2d3058;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .charFormButton{
+        width: 165px;
+        height: 35px;
+        border-radius: 50px;
+        border: solid 2px black;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all linear 0.2s;
+        background-color: #fff;
+    }
+
+    .charFormButton:hover{
+        border: solid 2px#2d3058;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .charFormButton:active{
+        background-color: lightgray;
+    }
+
+    .imgForm {
+        position:absolute;
+        top:20%;
+        right: -250%;
+    }
+
+    .imgForm > #img {
+        display: block;
+        border-radius: 50px;
+        border: solid 1px black;
+        height: 300px;
+        width: 300px;
+    }
+
+    .inputFile {
+        width: 165px;
+        padding: 5px;
+    }
+
+    #output{
+        clear: right;
+        /* border: solid 1px red; */
+        max-width: 500px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+    #imgOnline {
+        cursor: pointer;
+    }
 }
 
-.textBox:focus{
-    border: 2px solid #2d3058;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+/* AFFICHAGE TELEPHONE */
+@media only screen
+and (max-device-width: 699px) {
+    .textBox{
+        padding: 5px;
+        width: 160px;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.2s ease-in-out;
+        border: solid 2px #000;
+    }
 
-.numberBox{
-    padding: 5px;
-    border-radius: 10px;
-    border: solid 2px black;
-    width: 160px;
-    height: 30px;
-}
+    .textBox:focus{
+        border: 2px solid #2d3058;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
 
-.numberBox > #numberBox {
-    width: 80px;
-    left:0;
-}
+    .numberBox{
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 2px black;
+        width: 160px;
+        height: 30px;
+    }
 
-.numberBox > #minus, #plus {
-    width: 30px;
-    height: 22px;
-    background-color: #2d3058;
-    color: white;
-    border-radius: 10px;
-    border-style: none;
-    transition: all linear 0.2s;
-}
+    .numberBox > #numberBox {
+        width: 80px;
+        left:0;
+    }
 
-.numberBox > #minus:hover {
-    width: 30px;
-    height: 22px;
-    background-color: #2d3058;
-    color: white;
-    border-radius: 10px;
-    border-style: none;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+    .numberBox > #minus, #plus {
+        width: 30px;
+        height: 22px;
+        background-color: #2d3058;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        transition: all linear 0.2s;
+    }
 
-.numberBox > #plus:hover {
-    width: 30px;
-    height: 22px;
-    background-color: #2d3058;
-    color: white;
-    border-radius: 10px;
-    border-style: none;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+    .numberBox > #minus:hover {
+        width: 30px;
+        height: 22px;
+        background-color: #2d3058;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
 
-#numberBox {
-    border-radius: 10px;
-    border-color: #2d30581;
-}
+    .numberBox > #plus:hover {
+        width: 30px;
+        height: 22px;
+        background-color: #2d3058;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
 
-.textAreaBox{
-    border-radius: 10px;
-    border: solid 2px #000;
-    transition: all linear 0.2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    max-width: 160px;
-    min-width: 160px;
-    width: 160px;
-    height: 60px;
-    padding: 5px;
-}
+    #numberBox {
+        border-radius: 10px;
+        border-color: #2d30581;
+    }
 
-.textAreaBox:focus{
-    border: solid 2px #2d3058;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+    .textAreaBox{
+        border-radius: 10px;
+        border: solid 2px #000;
+        transition: all linear 0.2s;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        max-width: 160px;
+        min-width: 160px;
+        width: 160px;
+        height: 60px;
+        padding: 5px;
+    }
 
-.charFormButton{
-    width: 165px;
-    height: 35px;
-    border-radius: 50px;
-    border: solid 2px black;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all linear 0.2s;
-    background-color: #fff;
-}
+    .textAreaBox:focus{
+        border: solid 2px #2d3058;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
 
-.charFormButton:hover{
-    border: solid 2px#2d3058;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+    .charFormButton{
+        width: 100px;
+        height: 60px;
+        border-radius: 50px;
+        border: solid 2px black;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all linear 0.2s;
+        background-color: #fff;
+    }
 
-.charFormButton:active{
-    background-color: lightgray;
-}
+    .charFormButton:hover{
+        border: solid 2px#2d3058;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
 
-.imgForm {
-    position:absolute;
-    top:20%;
-    right: -250%;
-}
+    .charFormButton:active{
+        background-color: lightgray;
+    }
 
-.imgForm > #img {
-    display: block;
-    border-radius: 50px;
-    border: solid 1px black;
-}
+    .imgForm {
+        position:absolute;
+        top:30%;
+        right: 10px;
+    }
 
-.inputFile {
-    width: 165px;
-    padding: 5px;
-}
+    .imgForm > #img {
+        display: block;
+        border-radius: 50px;
+        border: solid 1px black;
+        width: 100px;
+        hieght: 100px;
+    }
 
-#output{
-    clear: right;
-    /* border: solid 1px red; */
-    max-width: 500px;
-    overflow: hidden;
-    word-wrap: break-word;
-}
+    .inputFile {
+        width: 165px;
+        padding: 5px;
+    }
 
-#imgOnline {
-    cursor: pointer;
-}
+    #output{
+        clear: right;
+        /* border: solid 1px red; */
+        max-width: 500px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
 
+    #imgOnline {
+        cursor: pointer;
+    }
+}
