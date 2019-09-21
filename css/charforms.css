@@ -238,7 +238,7 @@ and (max-device-width: 699px) {
     .imgForm {
         position:absolute;
         top:30%;
-        right: 10px;
+        right: 10%;
     }
 
     .imgForm > #img {
