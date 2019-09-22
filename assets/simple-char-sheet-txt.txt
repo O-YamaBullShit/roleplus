@@ -1,0 +1,19 @@
+Fiche personnage complexe
+
+Sexe :
+
+Nom :
+
+Prénom :
+
+Age :
+
+Race : 
+
+Hobbie(s) :
+
+Métier :
+
+Pouvoir / Spécialisation :
+
+Histoire :
