@@ -34,8 +34,37 @@
 </header>
 <main>
     <div class="article">
-        <h1>⚠️Page en construction⚠️</h1>
+        <h1>Outils</h1>
+        <!-- outils de hasard -->
+        <div id="random_tools">
+            <h2>Outils de hasard</h2>
+            <button class="shinyButton" id="easyBtn">Lancer facile</button>
+            <button class="shinyButton" id="normalBtn">Lancer normal</button>
+            <button class="shinyButton" id="hardBtn">Lancer difficile</button>
+            <button class="shinyButton" id="coinFlip">Pile ou face</button>
+            <p id="result"></p>
+        </div>
+
+        <div id="downloaders">
+            <a href="assets/simple-char-sheet-printable.pdf" target="_blank">Télécharger la version imprimable de la fiche personnage simple</a> <br> <br>
+            <a href="assets/complex-char-sheet-printable.pdf" target="_blank">Télécharger la version imprimable de la fiche personnage complexe</a> <br> <br>
+            <a href="assets/simple-char-sheet-txt.txt" target="_blank">Télécharger le fichier texte de la fiche personnage simple</a> <br> <br>
+            <a href="assets/complex-char-sheet-txt.txt" target="_blank">Télécharger le fichier texte de la fiche personnage complexe</a> <br> <br>
+        </div>
     </div>
 </main>
+<script>
+    var screenSize = screen.width;
+    if(screenSize <= 700){
+        var div = document.getElementById("random_tools");
+        div.innerHTML = "<h2>Outils de hasard</h2>" +
+            "<button class=\"shinyButton\" id=\"easyBtn\">Lancer facile</button>\n" +
+            "            <button class=\"shinyButton\" id=\"normalBtn\">Lancer normal</button> <br> <br>\n" +
+            "            <button class=\"shinyButton\" id=\"hardBtn\">Lancer difficile</button>\n" +
+            "            <button class=\"shinyButton\" id=\"coinFlip\">Pile ou face</button>" +
+            "<p id='result'></p>";
+    }
+</script>
+<script src="js/randomBtn.js"></script>
 </body>
 </html>
