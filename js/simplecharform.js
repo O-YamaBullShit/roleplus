@@ -53,7 +53,7 @@ function createOut(){
     <p>Hobbies : ${hobbies}</p>
     <p>Métier : ${job}</p>
     <p>Pouvoir/Spécialisation : ${power}</p>
-    <p>Métier : ${story}</p>
+    <p>Histoire : ${story}</p>
     <p>Lien de l'image : ${image}</p>
     </div>
     <button onclick="saveJson()" class="charFormButton">Exporter au format .rplus.json.</button> <br /> <br />
