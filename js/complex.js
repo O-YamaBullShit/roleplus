@@ -15,6 +15,7 @@ var add_info;
 var tastes
 var forces;
 var weaknesses;
+var objects;
 var story;
 var image;
 
@@ -32,6 +33,7 @@ function out(){
     tastes = document.getElementById("tastes").value;
     forces = document.getElementById("strenghts").value;
     weaknesses = document.getElementById("weaknesses").value;
+    objects = document.getElementById("objects").value;
     story = document.getElementById("story").value;
 
     //image
@@ -52,7 +54,7 @@ function out(){
         var div = document.querySelector(".imgForm");
         div.style.right = "-145%";
     }
-
+    
     // output
     var out = document.getElementById("output");
     out.innerHTML = `
@@ -68,6 +70,7 @@ function out(){
     <p>Goûts : ${tastes.replace(/\n/g, '<br />')}</p>
     <p>Forces : ${forces.replace(/\n/g, '<br />')}</p>
     <p>Faiblesses : ${weaknesses.replace(/\n/g, '<br />')}</p>
+    <p>Objets : ${objects.replace(/\n/g, '<br />')}</p>
     <p>Histoire : ${story}</p>
     <p>Image : ${image}</p>
     <br>
@@ -78,9 +81,9 @@ function out(){
 }
 
 function saveJson(){
-    exportJsonComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, story, image);
+    exportJsonComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, objects, story, image);
 }
 
 function exportMd(){
-    exportMdComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, story, image);
+    exportMdComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, objects, story, image);
 }

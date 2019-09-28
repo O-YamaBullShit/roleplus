@@ -54,7 +54,7 @@ function exportMdSimple(gender, nom, firstName, race, age, hobbies, job, power, 
     saveAs(blob, `${json.name}${json.firstName}.rplus.md`)
 }
 
-function exportJsonComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, story, image){
+function exportJsonComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, objects, story, image){
     var json = {
         id: 2,
         gender: gender,
@@ -69,14 +69,15 @@ function exportJsonComplex(gender, name, firstname, race, age, hobbies, job, pow
         tastes: tastes,
         strenghts: forces,
         weaknesses: weaknesses,
+        objects: objects,
         story: story,
         image: image,
     };
     var blob = new Blob([JSON.stringify(json, null, 2)], { type: "application/json" });
-    saveAs(blob, `${json.firstName}${json.name}.rplus.json`);
+    saveAs(blob, `${json.firstname}${json.name}.rplus.json`);
 }
 
-function exportMdComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, story, image){
+function exportMdComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, objects, story, image){
     var json = {
         id: 2,
         gender: gender,
@@ -91,6 +92,7 @@ function exportMdComplex(gender, name, firstname, race, age, hobbies, job, power
         tastes: tastes,
         strenghts: forces,
         weaknesses: weaknesses,
+        objects: objects,
         story: story,
         image: image,
     };
@@ -118,6 +120,8 @@ function exportMdComplex(gender, name, firstname, race, age, hobbies, job, power
 **Forces** : ${json.strenghts}
 
 **Faiblesses** : ${json.weaknesses}
+
+**Objets** : ${json.objects}
 
 **Histoire** : ${json.story}
 
