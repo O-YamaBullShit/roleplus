@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="assets/logo.png">
+        <title>Role + main menu</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/charforms.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="text">
+                <h1 id="title">Role +</h1>
+                <h2 id="desc">Tool for role playing.</h2>
+            </div>
+            <div class="nav">
+                    <ul>
+                        <li><a href="index.html"><i class="material-icons">
+                            home
+                        </i> Accueil</a></li>
+                        <li><a href="charforms/indexcharforms.html"><i class="material-icons">
+                            person
+                        </i> Fiches personnages</a></li>
+                        <li><a href="tools.html"><i class="material-icons">
+                            build
+                        </i> Outils</a></li>
+                        <li><a href="about.html"><i class="material-icons">
+                            info
+                        </i> A propos</a></li>
+                    </ul>
+                </div>
+        </header>
+        <main>
+            <div class="article">
+                <h2>Cette page est uniquement dédiée a la modification de personnage, les personnages sont lus sont avec le fichier avec l'extension <code>.rplus.json</code></h2>
+        <h3>Les personnages peuvent êtres chargés depuis votre ordinateur ou en ligne (⚠️ le lien doit mener directement au fichier comme tel :
+            <a href="https://bit.ly/2kZi7KV" target="_blank">https://bit.ly/2kZi7KV</a>)</h3>
+        <div id="reader">
+            <button class="shinyButton" id="onlineChar">Personnage en ligne</button> <br> <br>
+            <input type="file" id="files">
+            <div id="personnage"></div>
+        </div>
+            </div>
+        </main>
+        <script src="js/save.js"></script>
+        <script src="bower_components/file-saver/dist/FileSaver.min.js"></script>
+        <script src="js/change.js"></script>
+        <script src="assets/jquery-3.4.1.min.js"></script>
+    </body>
+</html>

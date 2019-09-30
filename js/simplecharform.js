@@ -28,7 +28,7 @@ function createOut(){
     if(image.startsWith("../")){
         image = "Pas d'image chargée !";
     } else if(image.startsWith("http") || image.startsWith("https")) {
-        image = "Image hebergée sur internet (" + image + ")";
+        image = image;
     } else {
         image = "Image locale.";
     }

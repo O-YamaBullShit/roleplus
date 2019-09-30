@@ -9,7 +9,7 @@ function load(file){
         if(this.readyState == 4 && this.status == 200) {
             $("#personnage").empty();
             if(this.response.id == 1){
-                $('#personnage').append(`<p>Sexe : ${this.response.gender} </p>`);
+                                $('#personnage').append(`<p>Sexe : ${this.response.gender} </p>`);
                 $('#personnage').append(`<p>Nom : ${this.response.name} </p>`);
                 $('#personnage').append(`<p>Prenom : ${this.response.firstName} </p>`);
                 $('#personnage').append(`<p>Race : ${this.response.race} </p>`);
