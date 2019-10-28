@@ -19,6 +19,7 @@ doc.addEventListener("keydown", function(evt){
 	}
 });
 
-function easter(){
-	close();
+var easter = () => {
+	// open the console
+		
 }

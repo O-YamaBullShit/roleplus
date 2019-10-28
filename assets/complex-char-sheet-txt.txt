@@ -1,10 +1,10 @@
-Fiche personnage complexe
+ï»¿Fiche personnage complexe
 
 Sexe :
 
 Nom :
 
-Prénom :
+PrÃ©nom :
 
 Age :
 
@@ -12,13 +12,13 @@ Race :
 
 Hobbie(s) :
 
-Métier :
+MÃ©tier :
 
-Pouvoir / Spécialisation :
+Pouvoir / SpÃ©cialisation :
 
 Annecdote sur le personnage :
 
-Goûts :
+GoÃ»ts :
 
 Forces :
 
@@ -27,6 +27,14 @@ Forces :
 
 
 Faiblesses :
+
+
+
+
+
+Objets :
+
+
 
 
 
