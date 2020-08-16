@@ -12,10 +12,10 @@ function readURL(input) {
 }
 
 // permet a l'utilisateur d'avoir une image stockée en ligne
-var onlineimg = document.getElementById("onlineImg").addEventListener("click", function(e) {
-    var img = document.getElementById("img");   
+var onlineimg = document.getElementById("onlineImg").addEventListener("click", function (e) {
+    var img = document.getElementById("img");
     var link = prompt("Lien de l'image");
-    if(link === ""){
+    if (link === "") {
         img.setAttribute("src", "../assets/fill.png")
     } else {
         img.setAttribute("src", link)
@@ -25,10 +25,11 @@ var onlineimg = document.getElementById("onlineImg").addEventListener("click", f
 var uploadBtn = document.getElementById("uploadButton");
 var currentImg = document.getElementById("img");
 
-uploadBtn.addEventListener("click", function() {
-    if(currentImg.getAttribute("src") == "../assets/fill.png" || currentImg.getAttribute("src") == ""){
+// vérifie si l'utilisateur a bien mis une image
+uploadBtn.addEventListener("click", function () {
+    if (currentImg.getAttribute("src") == "../assets/fill.png" || currentImg.getAttribute("src") == "") {
         alert("Veuillez mettre une image.");
     } else {
-        
+
     }
 });

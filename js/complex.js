@@ -2,6 +2,8 @@
 var saveBtn = document.getElementById("save-button");
 saveBtn.addEventListener("click", out);
 
+
+
 // variables du perso
 var gender;
 var name;
@@ -20,7 +22,7 @@ var story;
 var image;
 
 // fonction de sortie
-function out(){
+function out() {
     gender = document.getElementById("gender").value;
     name = document.getElementById("name").value;
     firstname = document.getElementById("firstname").value;
@@ -38,23 +40,23 @@ function out(){
 
     //image
     image = document.getElementById("img").getAttribute("src");
-    if(image.startsWith("../")){
+    if (image.startsWith("../")) {
         image = "Pas d'images chargée !";
-    } else if(image.startsWith("http")) {
+    } else if (image.startsWith("http")) {
         image = document.getElementById("img").getAttribute("src");
     } else {
         image = "Image locale";
     }
 
     var screenSize = screen.width;
-    if(screenSize <= 700){
+    if (screenSize <= 700) {
         var div = document.querySelector(".imgForm");
         div.style.right = "10px";
     } else {
         var div = document.querySelector(".imgForm");
         div.style.right = "-145%";
     }
-    
+
     // output
     var out = document.getElementById("output");
     out.innerHTML = `
@@ -80,10 +82,10 @@ function out(){
     `
 }
 
-function saveJson(){
+function saveJson() {
     exportJsonComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, objects, story, image);
 }
 
-function exportMd(){
+function exportMd() {
     exportMdComplex(gender, name, firstname, race, age, hobbies, job, power, add_info, tastes, forces, weaknesses, objects, story, image);
 }
